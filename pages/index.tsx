@@ -101,7 +101,7 @@ export default function Home() {
       window.removeEventListener("wheel", handleScroll);
       // clearTimeout(timeOut);
     };
-  }, [handleScroll]);
+  }, [handleScroll, controls, prevPage, current]);
 
   // useEffect(() => {
   //   if (prevPage !== 5 || current !== 1) {
