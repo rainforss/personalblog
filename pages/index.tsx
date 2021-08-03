@@ -12,6 +12,7 @@ import { usePrevious } from "../utils/usePrevious";
 import AboutScreen from "./home-components/AboutScreen";
 import BlogScreen from "./home-components/BlogScreen";
 import ContactScreen from "./home-components/ContactScreen";
+import HomeBody from "./home-components/HomeBody";
 import HomeScreen from "./home-components/HomeScreen";
 import ProjectScreen from "./home-components/ProjectScreen";
 import Layout from "./ui-components/Layout";
@@ -151,14 +152,7 @@ export default function Home() {
             icon={<ChevronDownIcon />}
             onClick={() => handleClick()}
           />
-          <MotionBox animate={controls}>
-            <HomeScreen />
-            <AboutScreen />
-            <ProjectScreen />
-            <BlogScreen />
-            <ContactScreen />
-            <HomeScreen />
-          </MotionBox>
+          <HomeBody controls={controls} />
         </Box>
       </>
     </Layout>
