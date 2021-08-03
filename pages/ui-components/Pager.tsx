@@ -1,7 +1,7 @@
 import { Box, Center, ChakraProps, Flex, Text } from "@chakra-ui/react";
 import React from "react";
-import { ProgressBar } from "./ProgressBar";
-import { ScrollText } from "./ScrollText";
+import ProgressBar from "./ProgressBar";
+import ScrollText from "./ScrollText";
 
 interface PagerProps extends ChakraProps {
   max: number;
@@ -9,7 +9,7 @@ interface PagerProps extends ChakraProps {
   previous: number;
 }
 
-export const Pager: React.FC<PagerProps> = ({
+const Pager: React.FC<PagerProps> = ({
   max,
   current,
   previous,
@@ -50,3 +50,5 @@ export const Pager: React.FC<PagerProps> = ({
     </Flex>
   );
 };
+
+export default Pager;

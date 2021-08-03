@@ -4,7 +4,7 @@ import React from "react";
 
 interface GridProps {}
 
-export const Grid: React.FC<GridProps> = React.memo(({}) => {
+const Grid: React.FC<GridProps> = React.memo(({}) => {
   const MotionBox = motion(Box);
   return (
     <>
@@ -73,3 +73,5 @@ export const Grid: React.FC<GridProps> = React.memo(({}) => {
 });
 
 Grid.displayName = "Grid";
+
+export default Grid;

@@ -1,8 +1,8 @@
 import { ChakraProps, Flex, Text } from "@chakra-ui/react";
 import { useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import { ProgressBar } from "./ProgressBar";
-import { ScrollText } from "./ScrollText";
+import ProgressBar from "./ProgressBar";
+import ScrollText from "./ScrollText";
 
 interface ScrollingTextDisplayProps extends ChakraProps {
   texts: string[];
@@ -10,7 +10,7 @@ interface ScrollingTextDisplayProps extends ChakraProps {
   scrollingInterval: number;
 }
 
-export const ScrollingTextDisplay: React.FC<ScrollingTextDisplayProps> = ({
+const ScrollingTextDisplay: React.FC<ScrollingTextDisplayProps> = ({
   texts,
   staticText,
   scrollingInterval,
@@ -66,3 +66,5 @@ export const ScrollingTextDisplay: React.FC<ScrollingTextDisplayProps> = ({
     </Flex>
   );
 };
+
+export default ScrollingTextDisplay;

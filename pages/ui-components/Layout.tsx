@@ -1,13 +1,13 @@
 import { Box } from "@chakra-ui/react";
 import React, { ReactElement } from "react";
-import { Grid } from "./Grid";
+import Grid from "./Grid";
 
 interface LayoutProps {
   gridOn?: boolean;
   children?: ReactElement;
 }
 
-export const Layout: React.FC<LayoutProps> = ({ gridOn, children }) => {
+const Layout: React.FC<LayoutProps> = ({ gridOn, children }) => {
   return (
     <Box
       height="100vh"
@@ -40,3 +40,5 @@ export const Layout: React.FC<LayoutProps> = ({ gridOn, children }) => {
     </Box>
   );
 };
+
+export default Layout;

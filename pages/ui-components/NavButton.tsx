@@ -7,7 +7,7 @@ interface NavButtonProps extends ChakraProps {
   onClose?: () => void;
 }
 
-export const NavButton: React.FC<NavButtonProps> = React.memo(
+const NavButton: React.FC<NavButtonProps> = React.memo(
   ({ onOpen, onClose, ...chakraProps }) => {
     const MotionBox = motion(Box);
     const controls = useAnimation();
@@ -69,3 +69,5 @@ export const NavButton: React.FC<NavButtonProps> = React.memo(
 );
 
 NavButton.displayName = "NavButton";
+
+export default NavButton;

@@ -1,10 +1,10 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import { UnderlineLink } from "../ui-components/UnderlineLink";
+import UnderlineLink from "../ui-components/UnderlineLink";
 
 interface ContactScreenProps {}
 
-export const ContactScreen: React.FC<ContactScreenProps> = ({}) => {
+const ContactScreen: React.FC<ContactScreenProps> = ({}) => {
   return (
     <Box h="100vh" position="relative">
       <UnderlineLink
@@ -29,3 +29,5 @@ export const ContactScreen: React.FC<ContactScreenProps> = ({}) => {
     </Box>
   );
 };
+
+export default ContactScreen;

@@ -5,7 +5,7 @@ interface TextBoxProps extends ChakraProps {
   texts: string[];
 }
 
-export const TextBox: React.FC<TextBoxProps> = ({ texts, ...chakraProps }) => {
+const TextBox: React.FC<TextBoxProps> = ({ texts, ...chakraProps }) => {
   return (
     <Box {...chakraProps}>
       {texts.map((t) => (
@@ -22,3 +22,5 @@ export const TextBox: React.FC<TextBoxProps> = ({ texts, ...chakraProps }) => {
     </Box>
   );
 };
+
+export default TextBox;

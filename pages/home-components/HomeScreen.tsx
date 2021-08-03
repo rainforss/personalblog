@@ -1,11 +1,11 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import { ScrollingTextDisplay } from "../ui-components/ScrollingTextDisplay";
-import { DigitalClock } from "./DigitalClock";
+import ScrollingTextDisplay from "../ui-components/ScrollingTextDisplay";
+import DigitalClock from "./DigitalClock";
 
 interface HomeScreenProps {}
 
-export const HomeScreen: React.FC<HomeScreenProps> = ({}) => {
+const HomeScreen: React.FC<HomeScreenProps> = ({}) => {
   return (
     <Box h="100vh" position="relative" zIndex={10}>
       <ScrollingTextDisplay
@@ -32,3 +32,5 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({}) => {
     </Box>
   );
 };
+
+export default HomeScreen;

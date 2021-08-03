@@ -11,7 +11,7 @@ interface ProgressBarProps extends ChakraProps {
   controls?: AnimationControls;
 }
 
-export const ProgressBar: React.FC<ProgressBarProps> = React.memo(
+const ProgressBar: React.FC<ProgressBarProps> = React.memo(
   ({
     isRepeating,
     repeatingInterval,
@@ -96,3 +96,5 @@ export const ProgressBar: React.FC<ProgressBarProps> = React.memo(
 );
 
 ProgressBar.displayName = "ProgressBar";
+
+export default ProgressBar;

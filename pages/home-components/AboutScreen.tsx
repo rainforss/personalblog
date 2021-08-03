@@ -1,11 +1,11 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import { TextBox } from "../ui-components/TextBox";
-import { UnderlineLink } from "../ui-components/UnderlineLink";
+import TextBox from "../ui-components/TextBox";
+import UnderlineLink from "../ui-components/UnderlineLink";
 
 interface AboutScreenProps {}
 
-export const AboutScreen: React.FC<AboutScreenProps> = ({}) => {
+const AboutScreen: React.FC<AboutScreenProps> = ({}) => {
   return (
     <Box h="100vh" position="relative">
       <UnderlineLink
@@ -42,3 +42,5 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({}) => {
     </Box>
   );
 };
+
+export default AboutScreen;

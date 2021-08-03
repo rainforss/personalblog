@@ -3,9 +3,7 @@ import React, { useEffect, useState } from "react";
 
 interface DigitalClockProps extends ChakraProps {}
 
-export const DigitalClock: React.FC<DigitalClockProps> = ({
-  ...chakraProps
-}) => {
+const DigitalClock: React.FC<DigitalClockProps> = ({ ...chakraProps }) => {
   const [start, setStart] = useState(false);
   const [time, setTime] = useState(new Date());
   let hr: number | string = time.getHours();
@@ -61,3 +59,5 @@ export const DigitalClock: React.FC<DigitalClockProps> = ({
     </Box>
   );
 };
+
+export default DigitalClock;

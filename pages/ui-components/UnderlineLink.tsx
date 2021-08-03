@@ -8,7 +8,7 @@ interface UnderlineLinkProps extends ChakraProps {
   linkUrl: string;
 }
 
-export const UnderlineLink: React.FC<UnderlineLinkProps> = ({
+const UnderlineLink: React.FC<UnderlineLinkProps> = ({
   linkText,
   linkUrl,
   ...chakraProps
@@ -58,3 +58,5 @@ export const UnderlineLink: React.FC<UnderlineLinkProps> = ({
     </Box>
   );
 };
+
+export default UnderlineLink;

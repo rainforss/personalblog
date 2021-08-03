@@ -1,10 +1,10 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
-import { UnderlineLink } from "../ui-components/UnderlineLink";
+import UnderlineLink from "../ui-components/UnderlineLink";
 
 interface ProjectScreenProps {}
 
-export const ProjectScreen: React.FC<ProjectScreenProps> = ({}) => {
+const ProjectScreen: React.FC<ProjectScreenProps> = ({}) => {
   return (
     <Box h="100vh" position="relative">
       <UnderlineLink
@@ -29,3 +29,5 @@ export const ProjectScreen: React.FC<ProjectScreenProps> = ({}) => {
     </Box>
   );
 };
+
+export default ProjectScreen;

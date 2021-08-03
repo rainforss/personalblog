@@ -9,18 +9,14 @@ import React, {
 } from "react";
 import { throttle } from "../utils/throttle";
 import { usePrevious } from "../utils/usePrevious";
-import { AboutScreen } from "./home-components/AboutScreen";
-import { BlogScreen } from "./home-components/BlogScreen";
-import { ContactScreen } from "./home-components/ContactScreen";
-import { HomeScreen } from "./home-components/HomeScreen";
-import { ProjectScreen } from "./home-components/ProjectScreen";
-import { Layout } from "./ui-components/Layout";
-import { NavButton } from "./ui-components/NavButton";
-import { Pager } from "./ui-components/Pager";
-import { ProgressBar } from "./ui-components/ProgressBar";
-import { ScrollingTextDisplay } from "./ui-components/ScrollingTextDisplay";
-import { ScrollText } from "./ui-components/ScrollText";
-import { UnderlineLink } from "./ui-components/UnderlineLink";
+import AboutScreen from "./home-components/AboutScreen";
+import BlogScreen from "./home-components/BlogScreen";
+import ContactScreen from "./home-components/ContactScreen";
+import HomeScreen from "./home-components/HomeScreen";
+import ProjectScreen from "./home-components/ProjectScreen";
+import Layout from "./ui-components/Layout";
+import NavButton from "./ui-components/NavButton";
+import Pager from "./ui-components/Pager";
 
 export default function Home() {
   const MotionBox = motion(Box);

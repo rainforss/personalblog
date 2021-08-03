@@ -7,7 +7,7 @@ interface ScrollTextProps extends ChakraProps {
   isAuto?: boolean;
 }
 
-export const ScrollText: React.FC<ScrollTextProps> = ({
+const ScrollText: React.FC<ScrollTextProps> = ({
   texts,
   currentIndex,
   isAuto,
@@ -71,3 +71,5 @@ export const ScrollText: React.FC<ScrollTextProps> = ({
     </Box>
   );
 };
+
+export default ScrollText;
